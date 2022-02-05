@@ -40,12 +40,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // 데이터 수정
-        User user2 = new User();
-        user2.setId(1);// 객체 인스턴스 생성
-        user2.setName("홍드로이드_수정");
-        user2.setAge("17");
-        user2.setPhoneNumber("01000000000");
-        mUserDao.setUpdateUser(user2);
+//        User user2 = new User();
+//        user2.setId(1);// 객체 인스턴스 생성
+//        user2.setName("홍드로이드_수정");
+//        user2.setAge("17");
+//        user2.setPhoneNumber("01000000000");
+//        mUserDao.setUpdateUser(user2);
+
+        // 데이터 삭제
+        User user3 = new User();
+        user3.setId(2);
+        mUserDao.setDeleteUser(user3);
 
 
     }
